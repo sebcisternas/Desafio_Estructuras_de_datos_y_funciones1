@@ -6,6 +6,8 @@ recordatorios = [['2021-01-01', "11:00", "Levantarse y ejercitar"],
 
 # Output
 
+
+#Ciclo for para recorrer la lista y la lista dentro de la lista.
 for i in range(len(recordatorios)):
     for j in range(len(recordatorios[i])):
         if recordatorios[i][j]=='2021-01-01':
@@ -13,7 +15,7 @@ for i in range(len(recordatorios)):
         elif recordatorios[i][j]=='2021-07-15':
             recordatorios[i][j]='2021-07-16'
        
- 
+ #Hay que hacer otro ciclo for ya que en el caso anterior los indices i y j cambian en el transcurso de la iteracion.
 for i in range(len(recordatorios)):
     for j in range(len(recordatorios[i])):
          if recordatorios[i][j]=='2021-12-25':
